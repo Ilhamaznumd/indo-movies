@@ -24,59 +24,51 @@ The dataset used is taken from https://www.kaggle.com/datasets/dionisiusdh/imdb-
 ---
 
 ## 🔧 Preprocessing
-Sebelum EDA dilakukan, beberapa langkah pembersihan data telah dilakukan:
-- Menghapus duplikat data.
-- Mengabaikan baris dengan missing value pada visualisasi tertentu.
-- Membentuk kategori grup tahun.
-- Memetakan rating usia.
-- Membersihkan kolom aktor dari NaN untuk analisis aktor terbanyak.
+Before EDA was performed, several data cleaning and transformation steps were performed:
+- De-duplicate data.
+- Ignore rows with missing values ​​in certain visualizations.
+- Map categories by year group, votes group, and age rating.
+- Clean the actor column from NaN to analyze the most actors.
 
 ---
 
 ## 📈 Exploratory Data Analysis
-Analisis yang dilakukan meliputi:
+The analysis conducted includes:
 
-- **Distribusi Film Berdasarkan Tahun**  
-  ➔ Melihat tren produksi film per dekade.
+- **Film Distribution by Year**
+➔ Seeing the trend of film production per decade.
 
-- **Distribusi Genre Film**  
-  ➔ Menganalisis genre film apa yang paling banyak diproduksi.
+- **Film Genre Distribution**
+➔ Analyzing which film genres are most produced.
 
-- **Distribusi Rating Pengguna**  
-  ➔ Menganalisis persebaran skor yang diberikan pengguna.
+- **User Rating Distribution**
+➔ Analyzing the distribution of scores given by users.
 
-- **Distribusi Rating Usia**  
-  ➔ Mengetahui segmentasi umur target film.
+- **Age Rating Distribution**
+➔ Knowing the target age segmentation of the film.
 
-- **Sutradara Paling Produktif**  
-  ➔ Siapa saja yang paling banyak memproduksi film.
+- **Most Productive Directors**
+➔ Who has produced the most films.
 
-- **Aktor/Aktris Paling Produktif**  
-  ➔ Siapa saja yang paling banyak membintangi film.
+- **Most Productive Actors/Actresses**
+➔ Who has starred in the most films.
 
-- **Rata-rata Rating per Genre**  
-  ➔ Melihat genre mana yang mendapatkan rating rata-rata tertinggi.
+- **Average Rating per Genre**
+➔ Seeing which genres get the highest average ratings.
 
-- **Distribusi Rating dari Penonton Berdasarkan Tahun**  
-  ➔ Melihat tren rating film dari penonton per tahun.
+- **Distribution of Ratings from Audiences by Year**
+➔ Seeing the trend of film ratings from audiences per year.
 
-- **Distribusi Film Berdasarkan Kategori Runtime**  
-  ➔ Menganalisis kategori seberapa panjang durasi film yang paling banyak diproduksi.
+- **Movie Distribution by Runtime Category**
+➔ Analyzes the category of how long the most-produced films are.
 
-- **Wordcloud Deskripsi**  
-  ➔ Visualisasi genre yang paling sering muncul.
+- **Wordcloud Description**
+➔ Visualization of the most frequently occurring words in film descriptions.
 
 ---
 
 ## 📝 Important Notes
-- Baris dengan nilai kosong pada kolom penting (seperti `description`, `genre`, `rating`, `directors`, `runtime`) **diabaikan** saat visualisasi untuk menjaga akurasi analisis.
-- Interpretasi chart mempertimbangkan potensi bias akibat missing data.
-
----
-
-## 🎯 Conclusions
-- Produksi film Indonesia meningkat drastis setelah tahun 2000.
-- Drama, Komedi, dan Romance menjadi genre paling dominan.
-- Sebagian besar film mendapatkan rating pengguna 5–8.
+- Rows with missing values ​​in important columns (such as `description`, `genre`, `rating`, `directors`, `runtime`) are **ignored** during visualization to maintain analysis accuracy.
+- Chart interpretation takes into account potential bias due to missing data.
 
 ---
